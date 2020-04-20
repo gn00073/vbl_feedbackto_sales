@@ -49,7 +49,7 @@ if(!$this->session->userdata('Logged_In')){
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Sales Orders</a></li>
-            <li><a href="<?php echo base_url('index.php/Home/Infrom_sales'); ?>">Feed Back to Sales</a></li>
+            <li><a href="<?php echo base_url('index.php/Users/Inform_Sales'); ?>">Feed Back to Sales</a></li>
             <li><a href="#">Home Deliveries</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Sales Data Upload</a></li>
@@ -60,8 +60,7 @@ if(!$this->session->userdata('Logged_In')){
       </ul>
   
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="<?php echo base_url('index.php/Home/Login'); ?>">Login</a></li>
-		<li><a href="<?php echo base_url('index.php/Home/Register'); ?>">Register</a></li>
+		
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <?php echo $this->session->userdata('First_Name') ;

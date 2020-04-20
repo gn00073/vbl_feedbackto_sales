@@ -31,7 +31,7 @@ class Login extends CI_Controller {
 				);
 				$this->session->set_userdata($User_Data);
 				$this->session->set_flashdata('Welcome_msg','Welcome Back' );
-				redirect('Admin/Index');
+				redirect('Users/Index');
 
 
 			}

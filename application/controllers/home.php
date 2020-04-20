@@ -20,9 +20,6 @@ class Home extends CI_Controller {
 	}
 
 
-	public function Infrom_sales()
-	{
-		$this->load->view('Infrom_sales');
-	}
+
 
 }
