@@ -8,7 +8,10 @@ $this->load->view('Users/dashboard');
 }
 
 public function Inform_Sales(){
-    $this->load->view('Users/Add_Post');
+    $this->load->model('db_selections');  // Load_Areas
+    $getAreas = $this->db_selections->Load_Areas();
+  
+    $this->load->view('Users/Add_Post',['getAreas'=>$getAreas]);
     
     }
 

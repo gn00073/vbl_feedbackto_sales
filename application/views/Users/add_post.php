@@ -47,14 +47,27 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Area">Nearest DB/DO Area</label>
   <div class="col-md-4">
+
+
+
     <select id="Area" name="Area" class="form-control">
-      <option value="1">Maradana</option>
-      <option value="2">Pettah</option>
-      <option value="">Rathmalana</option>
-      <option value="">Kandy</option>
-      <option value="">Minuwangoda</option>
-      <option value="">Nittambuwa</option>
+
+    
+  <?php 
+  if(count($getAreas)):
+    foreach($getAreas as $Areas):
+  ?> 
+      <option value="<?php echo $Areas->autoID ; ?>"><?php echo $Areas->Territory_Name ; ?></option>
+  <?php 
+    endforeach;
+  else:
+  endif;
+
+
+  
+  ?>
     </select>
+
   </div>
 </div>
 
@@ -90,3 +103,8 @@
 </div>
 
 <?php include 'includes/footer.php' ?>
+
+<script>
+$("#Area").chosen();
+
+</script>
