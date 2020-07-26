@@ -36,6 +36,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
           <ul class="dropdown-menu">
+          <li><a href="<?php echo base_url('index.php/Users/Register_Employee'); ?>">New Employee Register</a></li>
             <li><a href="#">Sales Orders</a></li>
             <li><a href="<?php echo base_url('index.php/Users/Inform_Sales'); ?>">Feed Back to Sales</a></li>
             <li><a href="#">Home Deliveries</a></li>

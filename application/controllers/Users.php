@@ -14,7 +14,13 @@ public function Inform_Sales(){
     $this->load->view('Users/Add_Post',['getAreas'=>$getAreas]);
     
     }
-
+    public function Register_Employee(){
+        $this->load->model('db_selections');  // Load_Areas
+        $getAreas = $this->db_selections->Load_Areas();
+      
+        $this->load->view('Users/register_employee',['getAreas'=>$getAreas]);
+        
+        }
 
 
 }
