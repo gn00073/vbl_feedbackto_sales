@@ -53,7 +53,7 @@
 
 
     <select id="Location" name="Location" class="form-control">
-
+<!--
     <option value="9802">Nugegoda DO</option>
     <option value="9803">Avissawella DO</option>
     <option value="9805">Kadawatha DO</option>
@@ -68,20 +68,20 @@
     <option value="9822">Kandy DO</option>
     <option value="9823">Galle DO</option>
     <option value="9200">Ranala VBL</option>
-    
+-->
   <?php 
-  /*
+  
   if(count($getAreas)):
     foreach($getAreas as $Areas):
   ?> 
-      <option value="<?php echo $Areas->autoID ; ?>"><?php echo $Areas->Territory_Name ; ?></option>
+      <option value="<?php echo $Areas->Code ; ?>"><?php echo $Areas->Distribution_Name ; ?></option>
   <?php 
     endforeach;
   else:
   endif;
 
 
-  */
+ 
   ?>
     </select>
 
@@ -240,14 +240,25 @@
 
 
 
-<!-- File Button --> 
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="OLD_EMP_CODE">Old Employee Code</label>  
+  <div class="col-md-4">
+  <input id="OLD_EMP_CODE" name="OLD_EMP_CODE" type="text" placeholder="Old Employee Code" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+
+<!-- File Button  
 <div class="form-group">
   <label class="col-md-4 control-label" for="image">Image</label>
   <div class="col-md-4">
     <input id="image" name="image" class="input-file" type="file">
   </div>
 </div>
-
+-->
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit">Submit</label>

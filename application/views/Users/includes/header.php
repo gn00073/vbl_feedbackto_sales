@@ -37,25 +37,22 @@ if(!$this->session->userdata('Logged_In')){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Varun Beverages Lanka</a>
+      <a class="navbar-brand" href="#">Varun Beverages Lanka Pvt Ltd</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
-        <li><a href="<?php echo base_url('index.php/Home/index'); ?>">Home</a></li>
+        <li><a href="<?php echo base_url('index.php/Users/Index'); ?>">Home</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manpower Employees<span class="caret"></span></a>
           <ul class="dropdown-menu">
-          <li><a href="<?php echo base_url('index.php/Users/Register_Employee'); ?>">New Employee Register</a></li>
-            <li><a href="#">Sales Orders</a></li>
-            <li><a href="<?php echo base_url('index.php/Users/Inform_Sales'); ?>">Feed Back to Sales</a></li>
-            <li><a href="#">Home Deliveries</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Sales Data Upload</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">KPI Data Upload</a></li>
+          <li><a href="<?php echo base_url('index.php/Users/Register_Employee'); ?>">Register New</a></li>
+            <li><a href="<?php echo base_url('index.php/Users/Index'); ?>">View Employees Details</a></li>
+            <li><a href="#">Rates Updates</a></li>
+            <li><a href="#">View Attendance</a></li>
+
           </ul>
         </li>
       </ul>
@@ -67,6 +64,7 @@ if(!$this->session->userdata('Logged_In')){
               <?php echo $this->session->userdata('First_Name') ;
               echo " ";
                echo $this->session->userdata('Last_Name');
+               $User = $this->session->userdata('Last_Name');
               ?> 
               <span class="caret"></span></a>
           <ul class="dropdown-menu">

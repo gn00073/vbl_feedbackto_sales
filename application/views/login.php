@@ -1,7 +1,7 @@
 <?php include 'partials/header.php' ?>
 
 
-<div class="container">
+<div class="container" id="Login" style="vertical-align: middle;">
 
 <h2>Login</h2>
 

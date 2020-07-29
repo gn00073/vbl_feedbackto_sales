@@ -35,7 +35,12 @@ class Employee extends CI_Controller {
 				$this->load->model('Employee_Transactions');
 				$responce = $this->Employee_Transactions->Update_DB();
 				if($responce == TRUE){
+					echo $responce;
 					$this->session->set_flashdata('msg','Employee Registered Successfully.');
+					
+
+					
+
 					redirect('Users/Register_Employee');
 					
 				}
