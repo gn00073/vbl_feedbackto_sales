@@ -2,9 +2,9 @@
 
 <div class="container">
 
-<h2>Register Employee</h2>
+<h3>Register Employee</h3>
 <?php if($this->session->flashdata('msg')){
-    echo "<h3>". $this->session->flashdata('msg'). "</h3>";
+    echo "<h4>". $this->session->flashdata('msg'). "</h4>";
 } 
 ?>
 <hr>
@@ -270,6 +270,9 @@
 </fieldset>
 
 <?php echo  form_close();?>
+
+
+
 
 
 </div>

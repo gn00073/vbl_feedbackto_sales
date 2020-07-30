@@ -38,7 +38,7 @@ class Employee extends CI_Controller {
 					echo $responce;
 					$this->session->set_flashdata('msg','Employee Registered Successfully.');
 					
-
+					
 					
 
 					redirect('Users/Register_Employee');

@@ -21,7 +21,11 @@ public function Inform_Sales(){
         $this->load->view('Users/register_employee',['getAreas'=>$getAreas]);
         
         }
-
+        public function Excel(){
+                      
+            $this->load->view('Users/excel');
+            
+            }
 
 }
 

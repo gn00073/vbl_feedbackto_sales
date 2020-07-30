@@ -1,34 +1,17 @@
 <?php include 'includes/header.php' ?>
 <link rel="stylesheet" href="<?php echo base_url('/css/main.css'); ?>" >
 
-<?php
 
-
-if($this->session->flashdata('Welcome_msg')){
-
-    echo "<h2>".$this->session->flashdata('Welcome_msg')."</h2>";
-}
-
-
-?>
-
-<h3 class="Page_Header">  <img src="<?php echo base_url('/images/vbl_rjcorp.png'); ?>"> Outsourced Employee Dashboard - 
-
-<?php echo $this->session->userdata('First_Name') ;?>
+<h3 class="Page_Header"> Manpower Employee
 </h3>
 
 
 <?php
 
- $Location = $this->session->userdata('Last_Name');
 
-//echo CI_VERSION;
 
-/*
-$query = $this->db->query("SELECT * FROM emlpoyee WHERE Location='$Location' ");
-*/
-//$query = $this->db->query("SELECT * FROM emlpoyee LEFT JOIN manpower_companies ON manpower_companies.mc_Code = emlpoyee.Manpower_Company WHERE Location='$Location' ORDER BY Date_Appointed DESC");
-$query = $this->db->query("SELECT * FROM emlpoyee LEFT JOIN manpower_companies ON manpower_companies.mc_Code = emlpoyee.Manpower_Company LEFT JOIN designations ON designations.Designation_ID = emlpoyee.Designation WHERE Location='$Location' ORDER BY Date_Appointed DESC");
+
+$query = $this->db->query("SELECT * FROM emlpoyee LEFT JOIN manpower_companies ON manpower_companies.mc_Code = emlpoyee.Manpower_Company LEFT JOIN designations ON designations.Designation_ID = emlpoyee.Designation WHERE emlpoyee.Status=1 ORDER BY Date_Appointed DESC");
 
 ?>
 <div class="Body_content"> 
@@ -48,9 +31,7 @@ $query = $this->db->query("SELECT * FROM emlpoyee LEFT JOIN manpower_companies O
 
 <tfoot>
 <tr>
-<td colspan="8">
-<div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-</td>
+
 </tr>
 </tfoot>
 <?php
