@@ -27,4 +27,12 @@ function carousel() {
 </script>
 
 
+<script type=“text/javascript”>
+
+window.location.replace("http://localhost:8080/vbl/index.php/Home/Login");
+</script>
+
+
+
+
 <?php include 'partials/footer.php' ?>

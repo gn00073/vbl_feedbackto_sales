@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="<?php echo base_url('/css/main.css'); ?>" >
 
 
-<h3 class="Page_Header"> Manpower Employee
+<h3 class="Page_Header"> Outsourced Employees
 </h3>
 
 
